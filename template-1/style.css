@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css?family=Roobert+TWHINT&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans');
+
+/* Layout Styling Start */
+
+:root {
+    --color-default: #ffffff;
+    --color-primary: #002278;
+    --color-primary-2: #0749EA;
+    --color-secondary: #EC712C;
+    --text-color: #0C1014;
+    --text-color-2: #515759;
+    --dark-primary: #000F44;
+}
+
+.text-default {
+    color: var(--color-default);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-primary-2 {
+    color: var(--color-primary-2);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
+.text-color-2 {
+    color: var(--text-color-2);
+}
+
+.text-dark {
+    color: var(--dark-primary);
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+body {
+    width: 100% !important;
+    min-width: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-break: break-word;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roobert TWHINT', 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+@media only screen {
+    html {
+        min-height: 100%;
+        background: var(--color-default);
+    }
+}
+
+img {
+    outline: none;
+    text-decoration: none;
+    border: 0;
+    line-height: 100%;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+    width: auto;
+    max-width: 100%;
+    clear: both;
+}
+
+a img {
+    border: none;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    border-collapse: collapse !important;
+}
+
+table,
+tr,
+td {
+    padding: 0;
+    vertical-align: top;
+    text-align: left;
+}
+
+
+table.wrapper {
+    background: var(--dark-primary);
+    height: 100%;
+    width: 100%;
+}
+
+center {
+    width: 100%;
+    min-width: 580px;
+    background: var(--dark-primary);
+    padding-top: 4rem;
+    padding-bottom: 4rem
+}
+
+.container {
+    background: var(--color-default);
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+    Margin: 0 auto;
+    text-align: inherit;
+}
+
+@media only screen and (max-width: 596px) {
+    .container {
+        width: 95% !important;
+    }
+}
+
+.row {
+    display: table;
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
+
+.col {
+    font-size: 16px;
+    line-height: 25px;
+    vertical-align: top;
+}
+
+@media (max-width: 480px) {
+    .col {
+        display: inline-block !important;
+        line-height: 23px;
+        width: 100% !important;
+    }
+
+    .col-sm-1 {
+        max-width: 25%;
+    }
+
+    .col-sm-2 {
+        max-width: 50%;
+    }
+
+    .col-sm-3 {
+        max-width: 75%;
+    }
+
+    .col-sm-third {
+        max-width: 33.33333%;
+    }
+
+    .col-sm-push-1 {
+        margin-left: 25%;
+    }
+
+    .col-sm-push-2 {
+        margin-left: 50%;
+    }
+
+    .col-sm-push-3 {
+        margin-left: 75%;
+    }
+
+    .col-sm-push-third {
+        margin-left: 33.33333%;
+    }
+
+    .full-width-sm {
+        display: table !important;
+        width: 100% !important;
+    }
+
+    .stack-sm-first {
+        display: table-header-group !important;
+    }
+
+    .stack-sm-last {
+        display: table-footer-group !important;
+    }
+
+    .stack-sm-top {
+        display: table-caption !important;
+        max-width: 100%;
+        padding-left: 0 !important;
+    }
+
+    .toggle-content {
+        max-height: 0;
+        overflow: auto;
+        transition: max-height .4s linear;
+        -webkit-transition: max-height .4s linear;
+    }
+
+    .toggle-trigger:hover+.toggle-content,
+    .toggle-content:hover {
+        max-height: 999px !important;
+    }
+
+    .show-sm {
+        display: inherit !important;
+        font-size: inherit !important;
+        line-height: inherit !important;
+        max-height: none !important;
+    }
+
+    .hide-sm {
+        display: none !important;
+    }
+
+    .align-sm-center {
+        display: table !important;
+        float: none;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .align-sm-left {
+        float: left;
+    }
+
+    .align-sm-right {
+        float: right;
+    }
+
+    .text-sm-center {
+        text-align: center !important;
+    }
+
+    .text-sm-left {
+        text-align: left !important;
+    }
+
+    .text-sm-right {
+        text-align: right !important;
+    }
+
+    .borderless-sm {
+        border: none !important;
+    }
+
+    .nav-sm-vertical .nav-item {
+        display: block;
+    }
+
+    .nav-sm-vertical .nav-item a {
+        display: inline-block;
+        padding: 4px 0 !important;
+    }
+
+    .spacer {
+        height: 0;
+    }
+}
+
+p {
+    color: var(--text-color-2);
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Roobert TWHINT', 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+p.small {
+    font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-color);
+    word-wrap: normal;
+    font-family: 'Roobert TWHINT', 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    margin-bottom: 10px;
+    Margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.p-8 {
+    padding: 8px !important;
+}
+
+.p-16 {
+    padding: 16px !important;
+}
+
+.p-24 {
+    padding: 24px !important;
+}
+
+.p-28 {
+    padding: 28px !important;
+}
+
+.p-32 {
+    padding: 32px !important;
+}
+
+.p-36 {
+    padding: 36px !important;
+}
+
+.p-40 {
+    padding: 40px !important;
+}
+
+.pt-0 {
+    padding-top: 0 !important;
+}
+
+.pt-8 {
+    padding-top: 8px !important;
+}
+
+.pt-16 {
+    padding-top: 16px !important;
+}
+
+.pt-24 {
+    padding-top: 24px !important;
+}
+
+.pt-28 {
+    padding-top: 28px !important;
+}
+
+.pt-32 {
+    padding-top: 32px !important;
+}
+
+.pt-36 {
+    padding-top: 36px !important;
+}
+
+.pt-40 {
+    padding-top: 40px !important;
+}
+
+.pr-0 {
+    padding-right: 0 !important;
+}
+
+.pr-8 {
+    padding-right: 8px !important;
+}
+
+.pr-16 {
+    padding-right: 16px !important;
+}
+
+.pr-24 {
+    padding-right: 24px !important;
+}
+
+.pr-28 {
+    padding-right: 28px !important;
+}
+
+.pr-32 {
+    padding-right: 32px !important;
+}
+
+.pr-36 {
+    padding-right: 36px !important;
+}
+
+.pr-40 {
+    padding-right: 40px !important;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.pb-8 {
+    padding-bottom: 8px !important;
+}
+
+.pb-16 {
+    padding-bottom: 16px !important;
+}
+
+.pb-24 {
+    padding-bottom: 24px !important;
+}
+
+.pb-28 {
+    padding-bottom: 28px !important;
+}
+
+.pb-32 {
+    padding-bottom: 32px !important;
+}
+
+.pb-36 {
+    padding-bottom: 36px !important;
+}
+
+.pb-40 {
+    padding-bottom: 40px !important;
+}
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+.pl-8 {
+    padding-left: 8px !important;
+}
+
+.pl-16 {
+    padding-left: 16px !important;
+}
+
+.pl-24 {
+    padding-left: 24px !important;
+}
+
+.pl-28 {
+    padding-left: 28px !important;
+}
+
+.pl-32 {
+    padding-left: 32px !important;
+}
+
+.pl-36 {
+    padding-left: 36px !important;
+}
+
+.pl-40 {
+    padding-left: 40px !important;
+}
+
+.px-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.px-8 {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+}
+
+.px-16 {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+}
+
+.px-24 {
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+}
+
+.px-28 {
+    padding-right: 28px !important;
+    padding-left: 28px !important;
+}
+
+.px-32 {
+    padding-right: 32px !important;
+    padding-left: 32px !important;
+}
+
+.px-36 {
+    padding-right: 36px !important;
+    padding-left: 36px !important;
+}
+
+.px-40 {
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+}
+
+.py-0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.py-8 {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+.py-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+.py-24 {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+}
+
+.py-28 {
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+}
+
+.py-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+}
+
+.py-36 {
+    padding-top: 36px !important;
+    padding-bottom: 36px !important;
+}
+
+.py-40 {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.border-secondary-top {
+    border-top: 4px solid var(--color-secondary);
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background: var(--color-secondary);
+}
+
+ul.social-media-list {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 12px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    list-style-type: none !important;
+    text-decoration: none;
+}
+
+.footer {
+    padding-top: 44px !important;
+    padding-bottom: 64px !important;
+}
